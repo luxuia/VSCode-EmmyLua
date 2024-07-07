@@ -34,11 +34,11 @@ jobs:
     - name: build
       run: |
         node ./build/prepare.js ${{ matrix.target }}
-        npx vsce package -o VSCode-EmmyLua-${{ matrix.target }}.vsix --target ${{ matrix.target }}
+        npx vsce package -o VSCode-EmmyLua-mm-${{ matrix.target }}.vsix --target ${{ matrix.target }}
     - name: Upload
       uses: actions/upload-artifact@v4
       with: 
-        name: VSCode-EmmyLua-${{ matrix.target }}
+        name: VSCode-EmmyLua-mm-${{ matrix.target }}
         path: ${{ github.workspace }}/VSCode-EmmyLua*.vsix
   
   publish:
