@@ -2,7 +2,7 @@
     "name": "anotheremmylua",
     "displayName": "emmyluam2",
     "description": "EmmyLua for vscode",
-    "version": "0.8.13",
+    "version": "0.8.14",
     "icon": "res/icon.png",
     "publisher": "luxuia",
     "engines": {
